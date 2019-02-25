@@ -1,0 +1,353 @@
+﻿<!--Your HTML code here-->
+<!DOCTYPE html>
+<html>
+<head><link rel="stylesheet" href="css/site.css"></head>
+    <title>Indian Premier League</title>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: black;
+        }
+
+        li {
+            float: left;
+        }
+        li {
+            border-right: 1px solid #bbb;
+            border-left:none;
+        }
+
+            li:last-child {
+                border-right: none;
+            }
+
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size:25px;
+            }
+            li b {
+                font-size: 45px;
+                color: white;
+            }
+                li a:hover {
+                    background-color: #333;
+                }
+
+            li myclass-container{
+                text-align:center;
+                width: 500px;
+                margin:0;
+            }
+            .mySlides{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+            }
+
+        .mybutton-left {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 5%;
+        }
+        .mybutton-right {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 5%;
+        }
+    </style>
+    <body bgcolor="#55ACEE">
+
+
+        <ul>
+            <li><a href="index.html">Indian Premier League</a></li>
+            <li><a href="aboutproject.html">About Assignment 3</a></li>
+            <li><a href="Aboutus.html">Contact Us</a></li>
+        </ul>
+
+
+        <div class="myclass-container">
+
+            <img class="mySlides" src="img/IPL3.jpg" style="width:65%"style="height:65%">
+            <img class="mySlides" src="img/newipl2.jpg" style="width:65%"style="height:65%">
+            <img class="mySlides" src="img/newipl3.jpg" style="width:65%"style="height:65%">
+            <img class="mySlides" src="img/newipl1.jpg" style="width:65%"style="height:65%">
+
+            <button class="prev" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="next" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+
+<script>
+   var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
+            }
+
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                if (n > x.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = x.length }
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                x[slideIndex - 1].style.display = "block";
+}
+</script>
+
+
+<div align="center">
+<a href = "aboutipl.html"><button class="button">About IPL 2019</a></button>
+<a href = "teams.html"><button class="button">IPL Teams</a></button>
+<a href = "schedule.html"><button class="button">IPL Schedule</a></button>
+<a href = "points.html"><button class="button">IPL Scoreboard</a></button>
+<a href = "Aboutus.html"><button class="button">About Group 5</a></button>
+<a href = "https://github.com/VijayaSingh22/Assignment_LookAndFeel"><button class="button">Github</button></a>
+</div>
+
+    <center><h2>IPL 2019 Schedule</h2>
+    <b>VIVO IPL Schedule 2019 (“IPL Season-12 Full Fixtures”), Venue, Date And Time, Date Sheet, Time Table, Tickets Booking, Points Table.</b>
+
+   <table border="1">
+        <tr>
+            <th>Match Number</th>
+            <th>Match Teams</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Venue</th>
+
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Chennai Super Kings (CSK) Vs Sun Risers Hyderabad (SRH)</td>
+            <td>23rd March 19</td>
+            <td>8:00 PM</td>
+            <td>Chennai</td>
+        </tr>
+        <tr>
+
+            <td>2</td>
+            <td>Kings XI Punjab (KXIP) Vs Delhi Capitals (DC)</td>
+            <td>24th March 19</td>
+            <td>4:00 PM</td>
+            <td>Punjab</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Kolkata Knight Riders (KKR) Vs Royal Challengers Bangalore (RCB)</td>
+            <td>24th March 19</td>
+            <td>8:00 PM</td>
+            <td>Kolkata</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Sun Risers Hyderabad (SRH) Vs Rajasthan Royals (RR)</td>
+            <td>25th March 19</td>
+            <td>4:00 PM</td>
+            <td>Hyderabad</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Chennai Super Kings (CSK) Vs Kolkata Knight Riders (KKR)</td>
+            <td>25th March 19</td>
+            <td>8:00 PM</td>
+            <td>Chennai</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Rajasthan Royals (RR) Vs Delhi Capitals (DC)</td>
+            <td>26th March 19</td>
+            <td>4:00 PM</td>
+            <td>Rajasthan</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Sun Risers Hyderabad (SRH) Vs Mumbai Indians (MI)</td>
+            <td>25th March 19</td>
+            <td>8:00 PM</td>
+            <td>Hyderabad</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>Royal Challengers Bangalore (RCB) Vs Kings XI Punjab (KXIP)</td>
+            <td>1st April 2019</td>
+            <td>4:00 PM</td>
+            <td>Punjab</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>Mumbai Indians (MI) Vs Delhi Capitals (DC)</td>
+            <td>2nd April 19</td>
+            <td>4:00 PM</td>
+            <td>Mumbai</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>Kolkata Knight Riders (KKR) Vs Sun Risers Hyderabad (SRH)</td>
+            <td>2nd April 19</td>
+            <td>8:00 PM</td>
+            <td>Hyderabad</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>Royal Challengers Bangalore (RCB) Vs Rajasthan Royals (RR)</td>
+            <td>5th April 2019</td>
+            <td>4:00 PM</td>
+            <td>bangalore</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>Kings XI Punjab (KXIP) Vs Chennai Super Kings (CSK)</td>
+            <td>5th April 2019</td>
+            <td>8:00 PM</td>
+            <td>Chennai</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>Kolkata Knight Riders (KKR) vs Delhi Capitals (DC)</td>
+            <td>6th April 2019</td>
+            <td>4:00 PM</td>
+            <td>Delhi</td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td>Mumbai Indians (MI) vs Royal Challengers Bangalore (RCB)</td>
+            <td>7th April 2019</td>
+            <td>4:00 PM</td>
+            <td>Mumbai</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>Rajasthan Royals (RR) vs Kolkata Knight Riders (KKR)</td>
+            <td>8th April 19</td>
+            <td>4:00 PM</td>
+            <td>Rajasthan</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>Kings XI Punjab (KXIP) vs Sunrisers Hyderabad (SRH)</td>
+            <td>9th April 19</td>
+            <td>4:00 PM</td>
+            <td>Hyderabad</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td>Chennai Super Kings (CSK) vs Rajasthan Royals (RR)</td>
+            <td>10th April 19</td>
+            <td>4:00 PM</td>
+            <td>Chennai</td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td>Kolkata Knight Riders (KKR) vs Kings XI Punjab (KXIP)</td>
+            <td>11th April 2019</td>
+            <td>4:00 PM</td>
+            <td>Punjab</td>
+        </tr>
+        <tr>
+            <td>19</td>
+            <td>Royal Challengers Bangalore (RCB) Vs Delhi Daredevils (DD)</td>
+            <td>12th April 2019</td>
+            <td>4:00 PM</td>
+            <td>Delhi</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td>Sun Risers Hyderabad (SRH) vs Chennai Super Kings (CSK)</td>
+            <td>14th April 2019</td>
+            <td>8:00 PM</td>
+            <td>Chennai</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td>Rajasthan Royals (RR) vs Mumbai Indians (MI)</td>
+            <td>15th April 2019</td>
+            <td>8:00 PM</td>
+            <td>Rajasthan</td>
+        </tr>
+        <tr>
+            <td>22</td>
+            <td>Delhi Capitals (DC) vs Kings XI Punjab (KXIP)</td>
+            <td>16th April 201</td>
+            <td>4:00 PM</td>
+            <td>Delhi</td>
+        </tr>
+        <tr>
+            <td>23</td>
+            <td>Mumbai Indians (MI) vs Sun Risers Hyderabad (SRH)</td>
+            <td>17th Arpil 19</td>
+            <td>8:00 PM</td>
+            <td>Hyderabad</td>
+        </tr>
+        <tr>
+            <td>24</td>
+            <td>Royal Challengers Bangalore (RCB) vs Chennai Super Kings (CSK)</td>
+            <td>18th April 2019</td>
+            <td>4:00 PM</td>
+            <td>Chennai</td>
+        </tr>
+        <tr>
+            <td>25</td>
+            <td>Sun Risers Hyderabad (SRH) vs Kings XI Punjab (KXIP)</td>
+            <td>19th April 2019</td>
+            <td>8:00 PM</td>
+            <td>Hyderabad</td>
+        </tr>
+        <tr>
+            <td>26</td>
+            <td>Delhi Capitals (DC) vs Kolkata Knight Riders (KKR)</td>
+            <td>20th April 2019</td>
+            <td>4:00 PM</td>
+            <td>Delhi</td>
+        </tr>
+        <tr>
+            <td>27</td>
+            <td>Chennai Super Kings (CSK) Vs Mumbai Indians (MI)</td>
+            <td>21st April 2019</td>
+            <td>4:00 PM</td>
+            <td>Mumbai</td>
+        </tr>
+        <tr>
+            <td>28</td>
+            <td>Qualifier-1</td>
+            <td>22nd April 2019</td>
+            <td>8:00 PM</td>
+            <td>Mumbai</td>
+        </tr>
+        <tr>
+            <td>29</td>
+            <td>Eliminator</td>
+            <td>23rd April 2019</td>
+            <td>9:00 PM</td>
+            <td>Delhi</td>
+        </tr>
+        <tr>
+            <td>30</td>
+            <td>Qualifier-2</td>
+            <td>24th April 2019</td>
+            <td>8:00 PM</td>
+            <td>Kolkata</td>
+        </tr>
+        <tr>
+            <td>31</td>
+            <td>Final</td>
+            <td>26th April 2019</td>
+            <td>9:00 PM</td>
+            <td>Mumbai</td>
+        </tr>
+</center>
+    </table>
+
+</body>
+</html>
